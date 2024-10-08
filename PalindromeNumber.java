@@ -1,21 +1,21 @@
 public class PalindromeNumber {
     public static boolean isPalindrome(int n) {
-        // Nếu số âm thì không thể là palindrome
+        
         if (n < 0) {
             return false;
         }
 
-        int original = n; // Lưu lại giá trị ban đầu của n
-        int reversed = 0; // Khởi tạo số đảo ngược
+        int original = n; 
+        int reversed = 0; 
 
-        // Đảo ngược số
+        
         while (n != 0) {
-            int digit = n % 10; // Lấy chữ số cuối
-            reversed = reversed * 10 + digit; // Xây dựng số đảo ngược
-            n /= 10; // Loại bỏ chữ số cuối cùng
+            int digit = n % 10; 
+            reversed = reversed * 10 + digit; 
+            n /= 10; 
         }
 
-        // So sánh số gốc và số đảo ngược
+        
         return original == reversed;
     }
 
