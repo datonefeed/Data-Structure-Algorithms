@@ -21,6 +21,6 @@ class Solution {
                 i--;
             }
         }
-        return k;
+        return k;// trả về length
     }
 }
