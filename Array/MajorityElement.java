@@ -1,9 +1,6 @@
 public class MajorityElement {
     public static int findMajorityElement(int[] nums) {
-        // Step 1: Find the candidate for majority element
         int candidate = findCandidate(nums);
-
-        // Step 2: Verify if the candidate is actually the majority element
         if (isMajority(nums, candidate)) {
             return candidate;
         } else {
