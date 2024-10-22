@@ -17,6 +17,6 @@ public class FibonacciMemoization {
 
     public static void main(String[] args) {
         int n = 10;
-        System.out.println("Fibonacci number is " + fib(n));
+        System.out.println("Fibonacci number is " + fib(n));// test result
     }
 }
